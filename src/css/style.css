@@ -37,3 +37,17 @@ nav .nav-link.active {
   background-size: cover;
   background-position: top left;
   background-attachment: fixed; }
+
+/*----------- Work Section ----------*/
+#work {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/media.jpg");
+  background-attachment: fixed;
+  background-position: top left;
+  background-size: cover; }
+  #work .fa {
+    font-size: 55px; }
+
+/*------------ Styling the footer ------------*/
+#footer {
+  background: #000;
+  color: #fff; }

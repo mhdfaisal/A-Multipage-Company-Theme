@@ -7,6 +7,8 @@
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
     <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <!-- Bootstrap4 Lightbox CSS CDN-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" type="text/css" rel="stylesheet">
     <title>Blozzom Index</title>
 </head>
 <body>
@@ -141,9 +143,120 @@
         </div>
     </section>
 
+    <!-- Work section  -->
+    <section class="py-5 text-center text-light my-5" id="work">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="#" data-toggle="modal" data-target="#md1" id="videobtn" class="text-white">
+                        <i class="fa fa-play"></i>
+                    </a>
+                    <h1>See What We Do</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- work Video Modal-->
+<div class="modal fade " id="md1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                    <button class="close" data-dismiss="modal" id="mdclose">
+                            <span>&times;</span>
+                        </button>
+                        <iframe width="100%" height="350" id="video" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Photo Gallery -->
+<section class="text-center">
+    <div class="container">
+       <div class="row">
+            <div class="col">
+                <h1>Photo Gallery</h1>
+                <p>Check out our photos</p>
+            </div>
+       </div>
+       <div class="row mb-5">
+           <div class="col-md-4">
+            <a href="https://loremflickr.com/560/560/internet?random=1" data-toggle="lightbox">
+                <img src="https://loremflickr.com/400/400/internet?random=1" class="img-fluid">
+            </a>
+           </div>
+           <div class="col-md-4">
+               <a href="https://loremflickr.com/500/500/internet?random=2" data-toggle="lightbox">
+                <img src="https://loremflickr.com/400/400/internet?random=2" class="img-fluid">
+            </a>
+           </div>
+           <div class="col-md-4">
+               <a href="https://loremflickr.com/500/500/internet?random=3" data-toggle="lightbox">
+                <img src="https://loremflickr.com/400/400/internet?random=3" class="img-fluid">
+               </a>
+           </div>
+       </div>
+       <div class="row">
+        <div class="col-md-4">
+            <a href="https://loremflickr.com/500/500/internet?random=4" data-toggle="lightbox">
+                <img src="https://loremflickr.com/400/400/internet?random=4" class="img-fluid">
+            </a>
+           </div>
+           <div class="col-md-4">
+               <a href="https://loremflickr.com/500/500/internet?random=5" data-toggle="lightbox">
+                <img src="https://loremflickr.com/400/400/internet?random=5" class="img-fluid">
+            </a>
+           </div>
+           <div class="col-md-4">
+               <a href="https://loremflickr.com/500/500/internet?random=6" data-toggle="lightbox">
+                <img src="https://loremflickr.com/400/400/internet?random=6" class="img-fluid">
+               </a>
+           </div>
+       </div>
+
+    </div>
+</section>
+
+<!-- Newsletter -->
+<section id="newsletter" class="bg-dark text-light text-center py-5 mt-4">
+    <div class="container">
+        <h1>Signup For Our Newsletter</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempore tenetur provident pariatur distinctio ducimus consectetur</p>
+        <form class="form-inline mx-auto justify-content-center mt-2">
+            <input type="text" class="form-control mr-2" placeholder="Enter Name">
+            <input type="email" class="form-control mr-2" placeholder="Enter Email">
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer" class="text-center p-4">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Copyright 2017 &copy; Blozzom
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/tether.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/video.js"></script>
+
+<!-- Bootstrap lightbox JS CDN-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+<!-- Lightbox script-->
+<script>
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                    event.preventDefault();
+                    $(this).ekkoLightbox();
+                });
+</script>
 </body>
 </html>
