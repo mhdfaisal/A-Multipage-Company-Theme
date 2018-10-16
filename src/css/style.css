@@ -51,3 +51,27 @@ nav .nav-link.active {
 #footer {
   background: #000;
   color: #fff; }
+
+/*------------------------------------------------*/
+/*------ Styling the About Page ------------------*/
+/*------------------------------------------------*/
+/*----- About Page Header -------*/
+#about-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/image1.jpg"); }
+
+/*---- About image -------*/
+.about-img {
+  margin-top: -105px; }
+
+/*----------- About cards ---------*/
+.fa {
+  font-size: 55px; }
+
+/*------------------------------------------------*/
+/*------ Styling the Services Page ------------------*/
+/*------------------------------------------------*/
+/*---------- Service page Header -----*/
+#service-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/image1.jpg");
+  background-size: cover;
+  background-position: top left; }
