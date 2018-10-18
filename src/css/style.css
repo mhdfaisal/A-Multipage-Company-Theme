@@ -95,3 +95,14 @@ nav .nav-link.active {
 #blogheader {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/image1.jpg");
   background-size: cover; }
+
+/*------------------------------------------------*/
+/*------ Styling the Blog Page ------------------*/
+/*------------------------------------------------*/
+/*----------- Styling the header ----------*/
+#contact-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/image1.jpg"); }
+
+/*---------- Styling the list -------*/
+#contact ul {
+  list-style-type: none; }
