@@ -97,5 +97,24 @@ nav{
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/image1.jpg');
     background-size: cover;
     background-position: top left;
+}
 
+/*------ Styling the cards ----*/
+#services-card{
+    .fa{
+        font-size: 40px;
+    }
+}
+
+/*--------- Styling the FAQs Accordion ---------*/
+#faq{
+
+    .card{
+        background-color:rgba(0, 0, 0, 0.301);
+    }
+
+    a{
+        text-decoration: none;
+        color:#fff;
+    }
 }
